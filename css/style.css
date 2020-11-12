@@ -176,7 +176,9 @@ footer{
 	.child-responsive{
 		display: block;
 	}
-	
+	.responsive-menu{
+		display: block;
+	}
 }
 
 
