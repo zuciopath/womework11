@@ -20,10 +20,10 @@ header{
     display: flex;
     justify-content: space-between;
 }
-ul{
+ /*ul{
 	display: flex;
 	padding: 15px;
-}
+}*/
 
 .list{
 	    padding-right: 30px;
@@ -95,6 +95,12 @@ footer{
 	display: flex;
 	flex-wrap: wrap;
 }
+.ul-flex{
+	    width: 100%;
+    background: black;
+    display: flex;
+	flex-wrap: wrap;
+}
 
 .box{
 	width: 100px;
@@ -107,25 +113,89 @@ footer{
 
 .search{
 	display: none;
-	max-width: 320px;
-    width: 100%;
-}
-.search-icon2{
-	width: 100%;
-    margin-left: 300px;
-    margin-top: -70px;
-}
-.responsive-menu{
-	position: absolute;
-	width: 100%;
-	margin-top: 90px;
-    background-color: #FFFFFF;
+	height: 30px;
 }
 
-.search hover .responsive-menu{
-	display: none;
+.search img{
+	width: 100%;
 }
-.child-responsive{
+
+.responsive-menu{
+	display: none;
+	position: absolute;
+	top: 145px;
+	left: 15px;
+	width: 100%;
+	/*height: 100%;*/
+	background-color: rgba(0,0,0,0.7);
+}
+.burger-back img{
+	width: 100%;
+}
+.resp-main-name{
+	margin-top: 30px;
+    margin-left: 72px;
+    font-size: 25px;
+    color: #707070;
+}
+.responsive-name{
+	font-size: 25px;
+    color: #707070;
+    margin-top: 10px;
+    margin-left: 38px;
+    margin-bottom: 40px;
+}
+.resp-text{
+	color: #707070;
+    font-size: 13px;
+    margin-left: 38px;
+}
+.responsive-child{
+    width: 100%;
+    background-color: #FFFFFF;
+}
+.responsive-child img{
+	max-width: 350px;
+    width: 100%;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.footer-responsive{
+	    width: 100%;
+    background: black;
+        margin-top: 40px;
+}
+.footer-responsive ul{
+	    padding: 15px;
+	padding-left: 143px;
+}
+.footer-responsive h1{
+	    font-size: 25px;
+    color: #FFFFFF;
+}
+.footer-responsive h2{
+	    font-size: 13px;
+    color: #FFFFFF;
+    margin-left: -40px;
+}
+.footer-resp1{
+	margin-top: 60px;
+}
+.footer-resp{
+	margin-left: 41px;
+}
+.responsive-icons{
+	margin-left: 155px;
+}
+.responsive-icons img{
+	    margin: 10px;
+}
+
+
+.search hover .responsive-menu{
+	display: block;
+}
+/*.child-responsive{
 	margin-left: 12%;
     margin-top: 50px;
     width: 100%;
@@ -175,7 +245,7 @@ footer{
 .burger-back img{
 	width: 100%;
 }
-
+*/
 @media(max-width: 480px){
 	.search{
 		display: block;
@@ -183,10 +253,7 @@ footer{
 	.navbar{
 		display: none;
 	}
-	.child-responsive{
-		display: block;
-    margin-top: 50px;
-	}
+	
 	.responsive-menu{
 		display: block;
 	}
@@ -203,21 +270,11 @@ footer{
 	.navbar{
 		display: none;
 	}
-	.child-responsive{
-		display: block;
-    margin-left: 17%;
-    margin-top: 50px;
-    width: 100%;
-    height: 100%;
-    max-width: 350px;
-	}
+	
 	.responsive-menu{
 		display: block;
-		margin-left: -318px;
 	}
-	.body{
-		display: none;
-	}
+	
 }
 
 
